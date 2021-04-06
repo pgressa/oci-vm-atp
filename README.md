@@ -24,3 +24,16 @@
 
 - [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
 
+## Feature atp
+
+Create dynamic group that matches the instance compartment or instance id:
+```
+Any {instance.compartment.id = 'ocid1.compartment.oc1.....'}
+```
+
+Create policy that allows dynamic group to work with autonomous wallet:
+```
+Allow dynamic-group <DYNAMIG-GROUP-NAME> to manage autonomous-database-family in compartment <COMPARTMENT-WITH-ATP>
+```
+
+Note: it uses whole database family, more finer policy should be possible to configure, link https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/adbpolicyreference.htm
