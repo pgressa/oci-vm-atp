@@ -3,7 +3,7 @@ micronaut:
     name: ociVmAtp
 datasources:
   default:
-    url: jdbc:oracle:thin:@localhost:1521/xe
-    driverClassName: oracle.jdbc.OracleDriver
-    username: system
-    password: oracle
+    ocid: ocid1.autonomousdatabase.oc1.phx.abyhqljrfxs3ec7gff3neal3t65igqajrqltagszyavt45ds7dw4fym7ci5a
+    walletPassword: micronaut.1
+    username: mnocidemo
+    password: "XXXXXXX"
